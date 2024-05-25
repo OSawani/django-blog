@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-osawani-django-blog-yrss3wv8bv.us1.codeanyapp.com', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-osawani-django-blog-7m32mcch21.us1.codeanyapp.com', '.herokuapp.com']
 
 
 # Application definition
@@ -45,12 +45,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage', 
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'crispy_forms',
     'crispy_bootstrap5',
+    'cloudinary',
     'blog',
     'ckeditor',
     'ckeditor_uploader',
